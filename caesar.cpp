@@ -38,9 +38,9 @@ char shiftChar(char c, int rshift)
 
 std::string encryptCaesar(std::string plaintext, int rshift) {
 
-  std::string encrypted;
+  std::string result;
   for (int i = 0; i < plaintext.size(); i++) {
-    encrypted += shiftChar(plaintext[i], rshift);
+    result += shiftChar(plaintext[i], rshift);
   }
-  return encrypted;
+  return result;
 }
